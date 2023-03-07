@@ -6,7 +6,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://astro-basic.paulapplegate.com',
   integrations: [mdx(), sitemap(), image({
       serviceEntryPoint: '@astrojs/image/sharp'
     })]

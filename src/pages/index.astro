@@ -8,7 +8,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+		<script type="text/javascript">
+			algoliasearchNetlify({
+				appId: 'XPDYEWFJ6C',
+				apiKey: '728c1826bff195cc61922fd2e71b7bb3',
+				siteId: '1b4abe4f-7880-46ae-b0b3-d055dd542b6b',
+				branch: 'main',
+				selector: 'div#search',
+			});
+		</script>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
